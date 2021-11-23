@@ -17,15 +17,15 @@ var st="<!DOCTYPE html><HTML><HEAD></HEAD><BODY>";
 var et="</BODY></HTML>";
 
 //http://localhost:5000/students
-student_router.get("/",(req,res)=>{
-    res.send(
-        st+"<H1>"+"Students Router Works!<br>Welcome to the portal!"+"</H1>"+
-        "<A href='http://localhost:5000/students/degPD'><INPUT type='button' value='Insert Personal Details'/></A>"+
-        "<A href='http://localhost:5000/students/degCD'><INPUT type='button' value='Insert Course Details'/></A>"+
-        "<A href='http://localhost:5000/students/degSD'><INPUT type='button' value='Insert Sem Details'/></A>"
-        +et
-    );
-});
+// student_router.get("/",(req,res)=>{
+//     res.send(
+//         st+"<H1>"+"Students Router Works!<br>Welcome to the portal!"+"</H1>"+
+//         "<A href='http://localhost:5000/students/degPD'><INPUT type='button' value='Insert Personal Details'/></A>"+
+//         "<A href='http://localhost:5000/students/degCD'><INPUT type='button' value='Insert Course Details'/></A>"+
+//         "<A href='http://localhost:5000/students/degSD'><INPUT type='button' value='Insert Sem Details'/></A>"
+//         +et
+//     );
+// });
 
 //http://localhost:5000/students/degPD
 student_router.get("/degPD",(req,res)=>{
